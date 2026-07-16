@@ -1,0 +1,325 @@
+{
+  "class_distribution": [
+    {
+      "risk": "Low",
+      "count": 1650
+    },
+    {
+      "risk": "Medium",
+      "count": 900
+    },
+    {
+      "risk": "High",
+      "count": 450
+    }
+  ],
+  "correlation_heatmap": {
+    "features": [
+      "Age",
+      "Working_Hours_Per_Day",
+      "Number_of_Projects",
+      "Sleep_Hours",
+      "Work_Life_Balance_Score",
+      "Stress_Level",
+      "Overtime_Hours",
+      "Years_of_Experience",
+      "Satisfaction_Level"
+    ],
+    "matrix": [
+      [
+        1.0,
+        -0.012,
+        -0.001,
+        0.048,
+        0.025,
+        -0.031,
+        -0.03,
+        0.813,
+        0.028
+      ],
+      [
+        -0.012,
+        1.0,
+        0.017,
+        -0.587,
+        -0.731,
+        0.605,
+        0.826,
+        -0.002,
+        -0.564
+      ],
+      [
+        -0.001,
+        0.017,
+        1.0,
+        0.008,
+        0.009,
+        0.258,
+        0.008,
+        -0.001,
+        -0.063
+      ],
+      [
+        0.048,
+        -0.587,
+        0.008,
+        1.0,
+        0.596,
+        -0.644,
+        -0.709,
+        0.052,
+        0.523
+      ],
+      [
+        0.025,
+        -0.731,
+        0.009,
+        0.596,
+        1.0,
+        -0.65,
+        -0.855,
+        0.025,
+        0.73
+      ],
+      [
+        -0.031,
+        0.605,
+        0.258,
+        -0.644,
+        -0.65,
+        1.0,
+        0.759,
+        -0.037,
+        -0.671
+      ],
+      [
+        -0.03,
+        0.826,
+        0.008,
+        -0.709,
+        -0.855,
+        0.759,
+        1.0,
+        -0.035,
+        -0.702
+      ],
+      [
+        0.813,
+        -0.002,
+        -0.001,
+        0.052,
+        0.025,
+        -0.037,
+        -0.035,
+        1.0,
+        0.036
+      ],
+      [
+        0.028,
+        -0.564,
+        -0.063,
+        0.523,
+        0.73,
+        -0.671,
+        -0.702,
+        0.036,
+        1.0
+      ]
+    ]
+  },
+  "model_comparison": [
+    {
+      "model": "logistic_regression",
+      "accuracy": 0.8117,
+      "precision": 0.8072,
+      "recall": 0.8117,
+      "f1_score": 0.8055,
+      "display_name": "Logistic Regression"
+    },
+    {
+      "model": "random_forest",
+      "accuracy": 0.7933,
+      "precision": 0.789,
+      "recall": 0.7933,
+      "f1_score": 0.7888,
+      "display_name": "Random Forest"
+    },
+    {
+      "model": "svm",
+      "accuracy": 0.7933,
+      "precision": 0.7872,
+      "recall": 0.7933,
+      "f1_score": 0.7844,
+      "display_name": "Support Vector Machine"
+    },
+    {
+      "model": "knn",
+      "accuracy": 0.77,
+      "precision": 0.7598,
+      "recall": 0.77,
+      "f1_score": 0.7576,
+      "display_name": "K-Nearest Neighbors"
+    },
+    {
+      "model": "decision_tree",
+      "accuracy": 0.7583,
+      "precision": 0.7515,
+      "recall": 0.7583,
+      "f1_score": 0.7529,
+      "display_name": "Decision Tree"
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "Stress_Level",
+      "importance": 0.788
+    },
+    {
+      "feature": "Work_Life_Balance_Score",
+      "importance": 0.7569
+    },
+    {
+      "feature": "Overtime_Hours",
+      "importance": 0.5602
+    },
+    {
+      "feature": "Sleep_Hours",
+      "importance": 0.4024
+    },
+    {
+      "feature": "Satisfaction_Level",
+      "importance": 0.364
+    },
+    {
+      "feature": "Working_Hours_Per_Day",
+      "importance": 0.2572
+    },
+    {
+      "feature": "Workload_Pressure",
+      "importance": 0.2458
+    },
+    {
+      "feature": "Number_of_Projects",
+      "importance": 0.2331
+    },
+    {
+      "feature": "Rest_Deficit",
+      "importance": 0.1036
+    },
+    {
+      "feature": "Remote_or_Onsite",
+      "importance": 0.0653
+    },
+    {
+      "feature": "Years_of_Experience",
+      "importance": 0.0564
+    },
+    {
+      "feature": "Gender",
+      "importance": 0.056
+    },
+    {
+      "feature": "Age",
+      "importance": 0.0521
+    },
+    {
+      "feature": "Job_Role",
+      "importance": 0.0121
+    }
+  ],
+  "confusion_matrix": {
+    "labels": [
+      "Low",
+      "Medium",
+      "High"
+    ],
+    "matrix": [
+      [
+        305,
+        25,
+        0
+      ],
+      [
+        64,
+        107,
+        9
+      ],
+      [
+        1,
+        14,
+        75
+      ]
+    ]
+  },
+  "dataset_summary": {
+    "total_employees": 3000,
+    "avg_stress_level": 2.08,
+    "avg_sleep_hours": 7.48,
+    "avg_overtime_hours": 2.55,
+    "avg_satisfaction": 9.09,
+    "high_risk_pct": 15.0
+  },
+  "burnout_by_role": [
+    {
+      "job_role": "Customer Support",
+      "Low": 175,
+      "Medium": 89,
+      "High": 41
+    },
+    {
+      "job_role": "Data Analyst",
+      "Low": 161,
+      "Medium": 95,
+      "High": 43
+    },
+    {
+      "job_role": "Designer",
+      "Low": 150,
+      "Medium": 91,
+      "High": 39
+    },
+    {
+      "job_role": "Finance Analyst",
+      "Low": 179,
+      "Medium": 84,
+      "High": 35
+    },
+    {
+      "job_role": "HR Specialist",
+      "Low": 161,
+      "Medium": 89,
+      "High": 51
+    },
+    {
+      "job_role": "Marketing Executive",
+      "Low": 177,
+      "Medium": 102,
+      "High": 57
+    },
+    {
+      "job_role": "Operations Manager",
+      "Low": 168,
+      "Medium": 90,
+      "High": 41
+    },
+    {
+      "job_role": "Product Manager",
+      "Low": 166,
+      "Medium": 94,
+      "High": 50
+    },
+    {
+      "job_role": "Sales Executive",
+      "Low": 173,
+      "Medium": 83,
+      "High": 45
+    },
+    {
+      "job_role": "Software Engineer",
+      "Low": 140,
+      "Medium": 83,
+      "High": 48
+    }
+  ],
+  "best_model": "logistic_regression"
+}

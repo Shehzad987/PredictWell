@@ -1,0 +1,17 @@
+node_modules/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+dist/
+build/
+.env
+.env.local
+*.log
+.DS_Store
+.vscode/
+.idea/
+venv/
+.venv/
+
+# Prediction history is user-generated at runtime — don't version it
+data/prediction_history.json

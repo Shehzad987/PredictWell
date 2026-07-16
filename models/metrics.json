@@ -1,0 +1,332 @@
+{
+  "results_by_model": {
+    "logistic_regression": {
+      "accuracy": 0.8117,
+      "precision": 0.8072,
+      "recall": 0.8117,
+      "f1_score": 0.8055,
+      "confusion_matrix": [
+        [
+          305,
+          25,
+          0
+        ],
+        [
+          64,
+          107,
+          9
+        ],
+        [
+          1,
+          14,
+          75
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.8243243243243243,
+          "recall": 0.9242424242424242,
+          "f1-score": 0.8714285714285714,
+          "support": 330.0
+        },
+        "Medium": {
+          "precision": 0.7328767123287672,
+          "recall": 0.5944444444444444,
+          "f1-score": 0.656441717791411,
+          "support": 180.0
+        },
+        "High": {
+          "precision": 0.8928571428571429,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8620689655172413,
+          "support": 90.0
+        },
+        "accuracy": 0.8116666666666666,
+        "macro avg": {
+          "precision": 0.8166860598367448,
+          "recall": 0.7840067340067339,
+          "f1-score": 0.7966464182457412,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.80716996350558,
+          "recall": 0.8116666666666666,
+          "f1-score": 0.8055285744507237,
+          "support": 600.0
+        }
+      },
+      "training_time_seconds": 0.27
+    },
+    "decision_tree": {
+      "accuracy": 0.7583,
+      "precision": 0.7515,
+      "recall": 0.7583,
+      "f1_score": 0.7529,
+      "confusion_matrix": [
+        [
+          289,
+          41,
+          0
+        ],
+        [
+          69,
+          97,
+          14
+        ],
+        [
+          3,
+          18,
+          69
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.8005540166204986,
+          "recall": 0.8757575757575757,
+          "f1-score": 0.8364688856729378,
+          "support": 330.0
+        },
+        "Medium": {
+          "precision": 0.6217948717948718,
+          "recall": 0.5388888888888889,
+          "f1-score": 0.5773809523809523,
+          "support": 180.0
+        },
+        "High": {
+          "precision": 0.8313253012048193,
+          "recall": 0.7666666666666667,
+          "f1-score": 0.7976878612716763,
+          "support": 90.0
+        },
+        "accuracy": 0.7583333333333333,
+        "macro avg": {
+          "precision": 0.7512247298733966,
+          "recall": 0.7271043771043771,
+          "f1-score": 0.7371792331085222,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.7515419658604586,
+          "recall": 0.7583333333333333,
+          "f1-score": 0.7529253520251529,
+          "support": 600.0
+        }
+      },
+      "training_time_seconds": 0.03
+    },
+    "random_forest": {
+      "accuracy": 0.7933,
+      "precision": 0.789,
+      "recall": 0.7933,
+      "f1_score": 0.7888,
+      "confusion_matrix": [
+        [
+          296,
+          34,
+          0
+        ],
+        [
+          66,
+          106,
+          8
+        ],
+        [
+          1,
+          15,
+          74
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.8154269972451791,
+          "recall": 0.896969696969697,
+          "f1-score": 0.8542568542568543,
+          "support": 330.0
+        },
+        "Medium": {
+          "precision": 0.6838709677419355,
+          "recall": 0.5888888888888889,
+          "f1-score": 0.6328358208955224,
+          "support": 180.0
+        },
+        "High": {
+          "precision": 0.9024390243902439,
+          "recall": 0.8222222222222222,
+          "f1-score": 0.8604651162790697,
+          "support": 90.0
+        },
+        "accuracy": 0.7933333333333333,
+        "macro avg": {
+          "precision": 0.8005789964591195,
+          "recall": 0.7693602693602694,
+          "f1-score": 0.7825192638104822,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.7890119924659659,
+          "recall": 0.7933333333333333,
+          "f1-score": 0.788761783551787,
+          "support": 600.0
+        }
+      },
+      "training_time_seconds": 1.66
+    },
+    "knn": {
+      "accuracy": 0.77,
+      "precision": 0.7598,
+      "recall": 0.77,
+      "f1_score": 0.7576,
+      "confusion_matrix": [
+        [
+          302,
+          28,
+          0
+        ],
+        [
+          80,
+          86,
+          14
+        ],
+        [
+          1,
+          15,
+          74
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.7885117493472585,
+          "recall": 0.9151515151515152,
+          "f1-score": 0.847124824684432,
+          "support": 330.0
+        },
+        "Medium": {
+          "precision": 0.6666666666666666,
+          "recall": 0.4777777777777778,
+          "f1-score": 0.5566343042071198,
+          "support": 180.0
+        },
+        "High": {
+          "precision": 0.8409090909090909,
+          "recall": 0.8222222222222222,
+          "f1-score": 0.8314606741573034,
+          "support": 90.0
+        },
+        "accuracy": 0.77,
+        "macro avg": {
+          "precision": 0.765362502307672,
+          "recall": 0.7383838383838383,
+          "f1-score": 0.7450732676829516,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.7598178257773558,
+          "recall": 0.77,
+          "f1-score": 0.7576280459621691,
+          "support": 600.0
+        }
+      },
+      "training_time_seconds": 0.02
+    },
+    "svm": {
+      "accuracy": 0.7933,
+      "precision": 0.7872,
+      "recall": 0.7933,
+      "f1_score": 0.7844,
+      "confusion_matrix": [
+        [
+          305,
+          25,
+          0
+        ],
+        [
+          73,
+          97,
+          10
+        ],
+        [
+          1,
+          15,
+          74
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.8047493403693932,
+          "recall": 0.9242424242424242,
+          "f1-score": 0.8603667136812412,
+          "support": 330.0
+        },
+        "Medium": {
+          "precision": 0.708029197080292,
+          "recall": 0.5388888888888889,
+          "f1-score": 0.61198738170347,
+          "support": 180.0
+        },
+        "High": {
+          "precision": 0.8809523809523809,
+          "recall": 0.8222222222222222,
+          "f1-score": 0.8505747126436781,
+          "support": 90.0
+        },
+        "accuracy": 0.7933333333333333,
+        "macro avg": {
+          "precision": 0.797910306134022,
+          "recall": 0.7617845117845118,
+          "f1-score": 0.7743096026761297,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.787163753470111,
+          "recall": 0.7933333333333333,
+          "f1-score": 0.7843841139322754,
+          "support": 600.0
+        }
+      },
+      "training_time_seconds": 1.63
+    }
+  },
+  "best_model": "logistic_regression",
+  "best_model_display_name": "Logistic Regression",
+  "feature_columns": [
+    "Age",
+    "Working_Hours_Per_Day",
+    "Number_of_Projects",
+    "Sleep_Hours",
+    "Work_Life_Balance_Score",
+    "Stress_Level",
+    "Overtime_Hours",
+    "Years_of_Experience",
+    "Satisfaction_Level",
+    "Workload_Pressure",
+    "Rest_Deficit",
+    "Gender",
+    "Job_Role",
+    "Remote_or_Onsite"
+  ]
+}
