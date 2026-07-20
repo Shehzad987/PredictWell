@@ -1,13 +1,3 @@
-"""
-================================================================================
- PredictWell — PDF Report Generator
-================================================================================
-Builds a clean, professional one-page PDF summary of a single prediction:
-employee inputs, predicted risk level, class probabilities, and AI
-recommendations. Used by the "Export Prediction Reports (.pdf)" feature.
-================================================================================
-"""
-
 import io
 from datetime import datetime
 

@@ -1,20 +1,3 @@
-"""
-================================================================================
- PredictWell — Model Training & Comparison
-================================================================================
-Trains Logistic Regression, Decision Tree, Random Forest, KNN, and SVM on
-the preprocessed dataset, evaluates each with a full metrics suite, picks
-the best performer (by weighted F1 — a fairer choice than accuracy alone
-given the class imbalance), and persists:
-  - models/best_model.pkl          the winning trained model
-  - models/metrics.json            per-model metrics + comparison table
-  - models/charts_data.json        JSON chart data for the dashboard
-
-Run:
-    python src/train.py
-================================================================================
-"""
-
 import time
 
 from sklearn.linear_model import LogisticRegression

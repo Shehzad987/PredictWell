@@ -1,14 +1,3 @@
-"""
-================================================================================
- PredictWell — Shared Utilities
-================================================================================
-Central place for file paths, feature definitions, and small helper
-functions reused by preprocess.py, train.py, evaluate.py, and predict.py.
-Keeping these in one place avoids the classic "column list drifted between
-training and inference" bug that silently breaks ML pipelines.
-================================================================================
-"""
-
 import json
 from pathlib import Path
 

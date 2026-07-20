@@ -1,14 +1,3 @@
-"""
-================================================================================
- PredictWell — Model Evaluation
-================================================================================
-Computes accuracy/precision/recall/F1, confusion matrices, and feature
-importance for a trained model, and produces the JSON data structures the
-frontend's interactive charts consume directly (no server-side image
-rendering needed for the dashboard — Recharts renders from this JSON).
-================================================================================
-"""
-
 import numpy as np
 from sklearn.metrics import (
     accuracy_score,
@@ -54,12 +43,7 @@ def evaluate_model(model, X_test, y_test, label_encoder):
 
 
 def get_feature_importance(model, feature_columns):
-    """
-    Extracts feature importance where the model type supports it
-    (tree-based models directly; linear models via absolute coefficient
-    magnitude, averaged across classes). Returns None for models where
-    neither concept applies cleanly (e.g. raw KNN, SVM with non-linear kernel).
-    """
+   
     if hasattr(model, "feature_importances_"):
         importances = model.feature_importances_
     elif hasattr(model, "coef_"):
@@ -73,8 +57,7 @@ def get_feature_importance(model, feature_columns):
 
 def build_model_comparison(results_by_model):
     """
-    Shapes per-model evaluate_model() outputs into the flat comparison
-    structure the "Model Training" dashboard page renders as a bar chart.
+    Shapes per-model evaluate_model() outputs into the flat comparison structure the "Model Training" dashboard page renders as a bar chart.
     """
     comparison = []
     for model_key, result in results_by_model.items():

@@ -1,13 +1,3 @@
-"""
-================================================================================
- PredictWell — API Schemas
-================================================================================
-Pydantic request/response models for the FastAPI backend. Keeping these
-separate from main.py keeps route handlers focused on logic rather than
-validation boilerplate.
-================================================================================
-"""
-
 from typing import Optional
 from pydantic import BaseModel, Field
 

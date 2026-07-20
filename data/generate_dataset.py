@@ -1,24 +1,3 @@
-"""
-================================================================================
- PredictWell — Synthetic Employee Burnout Dataset Generator
-================================================================================
-Generates a realistic, correlated employee dataset for training the burnout
-risk classifier. Real HR datasets with labeled "burnout risk" are scarce and
-mostly private/proprietary, so this generator produces a dataset with the
-same statistical structure real HR analytics data would have: burnout risk
-is NOT random — it's driven by a weighted combination of overtime, stress,
-sleep, work-life balance, and satisfaction, with realistic noise added so
-the classification problem is genuinely non-trivial (not a leaky/trivial
-target).
-
-Run:
-    python data/generate_dataset.py
-
-Output:
-    data/employee_burnout_data.csv
-================================================================================
-"""
-
 import numpy as np
 import pandas as pd
 from pathlib import Path

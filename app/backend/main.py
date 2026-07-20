@@ -1,16 +1,3 @@
-"""
-================================================================================
- PredictWell — FastAPI Backend
-================================================================================
-Serves the REST API consumed by the React dashboard: dataset analytics,
-model training/comparison, live predictions, prediction history, model
-download, and PDF report export.
-
-Run (from the app/backend directory):
-    uvicorn main:app --reload --port 8000
-================================================================================
-"""
-
 import sys
 from pathlib import Path
 
@@ -57,12 +44,7 @@ def _require_artifacts():
             detail="No trained model found yet. Run 'python src/train.py' or POST /api/models/train first.",
         )
 
-
-# --------------------------------------------------------------------------
 # Health
-# --------------------------------------------------------------------------
-
-
 @app.get("/api/health")
 def health_check():
     return {
@@ -71,11 +53,7 @@ def health_check():
         "model_ready": _artifacts_ready(),
     }
 
-
-# --------------------------------------------------------------------------
 # Dataset Analytics
-# --------------------------------------------------------------------------
-
 
 @app.get("/api/dataset/summary")
 def dataset_summary():
@@ -96,10 +74,7 @@ def dataset_charts():
     }
 
 
-# --------------------------------------------------------------------------
 # Model Training & Comparison
-# --------------------------------------------------------------------------
-
 
 @app.get("/api/models/metrics")
 def model_metrics():
@@ -137,9 +112,9 @@ def train_models(payload: TrainRequest = TrainRequest()):
     }
 
 
-# --------------------------------------------------------------------------
+
 # Prediction Center
-# --------------------------------------------------------------------------
+
 
 
 @app.post("/api/predict")
@@ -170,9 +145,7 @@ def clear_prediction_history():
     return {"success": True, "message": "Prediction history cleared"}
 
 
-# --------------------------------------------------------------------------
 # Model Download
-# --------------------------------------------------------------------------
 
 
 @app.get("/api/models/download")
@@ -185,9 +158,8 @@ def download_model():
     )
 
 
-# --------------------------------------------------------------------------
 # PDF Report Export
-# --------------------------------------------------------------------------
+
 
 
 @app.get("/api/reports/{prediction_id}")
@@ -204,9 +176,7 @@ def export_report(prediction_id: str):
     )
 
 
-# --------------------------------------------------------------------------
 # Misc
-# --------------------------------------------------------------------------
 
 
 @app.get("/api/models/list")

@@ -1,17 +1,4 @@
-"""
-================================================================================
- PredictWell — Prediction
-================================================================================
-Loads the trained model + preprocessing artifacts and scores a single new
-employee record. This is the module the FastAPI backend calls for every
-"Prediction Center" request — it mirrors preprocess.py's transformations
-exactly (same encoders, same scaler, same feature order) so training/serving
-skew can't creep in.
-================================================================================
-"""
-
 import pandas as pd
-
 from utils import (
     NUMERIC_FEATURES,
     CATEGORICAL_FEATURES,

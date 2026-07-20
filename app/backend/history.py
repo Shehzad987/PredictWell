@@ -1,14 +1,3 @@
-"""
-================================================================================
- PredictWell — Prediction History Store
-================================================================================
-A lightweight, dependency-free history store backed by a JSON file. This is
-intentionally simple (no database) since PredictWell is a single-tenant
-analytics tool — swapping this for a real database later only requires
-changing this one module.
-================================================================================
-"""
-
 import json
 import uuid
 from datetime import datetime, timezone

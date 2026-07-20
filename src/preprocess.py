@@ -1,18 +1,3 @@
-"""
-================================================================================
- PredictWell — Data Preprocessing
-================================================================================
-Handles the "Data Cleaning" and "Feature Engineering" stages of the pipeline:
-  1. Load the raw CSV
-  2. Clean: drop exact duplicates, impute missing values
-  3. Feature engineering: derive a couple of interaction features that are
-     known to matter for burnout (workload pressure, rest deficit)
-  4. Encode categorical features (label encoding, saved for inference reuse)
-  5. Scale numeric features (StandardScaler, saved for inference reuse)
-  6. Train/test split (stratified, since classes are imbalanced)
-================================================================================
-"""
-
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
